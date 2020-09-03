@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" href="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge-5\images\favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  <style>
+
+  h1 {font-family:"Poppins", monospace;}
+  p, h2, h3 {font-family: "Open Sans", monospace;
+font-weight: 600;}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .top-container .navbar {margin: 2rem 8rem;}
+     .top-container .nav-item button { border-radius: 50px;
+     width:150px;}
+
+    .center h1 {width:70%;
+    margin: 10rem auto 2rem;
+    text-align: center;
+  }
+  .center p  {width:35%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.center button {margin: 0 auto 4rem;
+border-radius: 25px;
+display: block;
+width: 20%;}
+
+.imagi {margin-top: 5rem;
+  text-align: center;}
+
+.users {width:90%;}
+
+.users h1 {width:60%;
+  margin: 0 auto;
+font-size: 4rem;}
+
+.users p {margin-top: 1rem;
+  width:60%;
+font-weight: 400;
+font-size: 0.9rem;}
+
+.users img {margin:0 8rem 0.5rem 0;
+width:30px;}
+
+.users {margin:7rem auto 3rem;
+text-align: center;}
+
+.second {height:500px;
+background-color: hsl(207, 100%, 98%);}
+
+.second img {float:right;
+margin: 3.5rem 8rem 3.5rem 0;}
+
+.second .second-half {width: 35%;
+margin:0 10rem;
+padding-top: 10rem;}
+
+.second .second-half h2, .conversations .convo h2 {font-weight: 800;
+  font-size:2.5rem;
+margin-bottom: 1.5rem;}
+
+.second .second-half p {font-size:0.9rem;
+  font-weight: 600;
+color: #333333;}
+
+.conversations img {margin:7rem 9rem 6rem;
+float:left;}
+
+.conversations .convo {width:47%;
+margin: 0 5rem 5rem 40rem;
+padding-top: 13rem;
+text-align: left;}
+
+.conversations .convo p {font-size:0.9rem;
+  font-weight: 600;
+color: #333333;}
+
+.conversations .inner {width:60%;
+  margin: auto;
+  text-align: center;}
+
+ .conversations .inner button{margin: 1rem auto 10rem;
+  border-radius: 100px;
+  width: 330px;
+  height:60px;}
+
+.users {clear:both;}
+
+
+.foot-note .row {background-color: hsl(192, 100%, 9%);
+height:600px;
+color: #ffffff;
+width: 1365px;
+padding:4rem 0 5rem 2rem;
+box-sizing: padding-box;
+font-size: 0.95rem;}
+
+.foot-note .row .woods {padding: 5rem 4rem;}
+
+.foot-note .row .woods p {width: 350px;
+font-weight: 400;
+color: #dfdfdf;}
+
+.foot-note .row .woods img {margin-bottom:2rem;}
+
+.foot-note .row .woods svg {margin-right: 1rem;}
+
+.foot-note .row .tables h3 {margin: 5rem 3rem 2rem 0;
+font-weight: 700;
+text-transform: uppercase;}
+
+.foot-note .row .tables p {font-weight: 400;
+width: 60%;
+color:#dfdfdf;}
+
+.foot-note .row .tables form input {width: 350px;
+height: 50px;
+border-radius: 7px;
+padding: 1rem;}
+
+.foot-note .row .tables form button { margin-left: 1rem;
+  width: 170px;
+height:48px;
+vertical-align: top;}
+
+.foot-note .row div.icons {margin-left:3.1rem;}
+
+.foot-note .row i {margin: 0.7rem;
+font-size: 1.6rem;}
+
+  </style>
+</head>
+<body>
+
+  <section class="top-container">
+    <nav class="navbar navbar_expand-lg">
+      <a href="" class="navbar-brand">
+        <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\logo.svg" alt="Logo image" width="200">
+      </a>
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+          <button type="submit" class="btn btn-outline-danger">Try it for free</button>
+      </li>
+      </ul>
+    </nav>
+
+    <div class="center">
+
+        <h1>Build The Community Your Fans Will Love</h1>
+
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does
+        your audience. Create connections with your users as you engage in genuine discussion.</p>
+          <button type="submit" name="button" class="btn btn-danger btn-lg">Get Started For Free</button>
+          <div class="imagi">
+            <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\screen-mockups.svg" alt="screens">
+          </div>
+          <div class="users row">
+            <div class="col-lg-6">
+              <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\icon-communities.svg" alt="communities">
+              <h1>1.4k+</h1>
+              <p>Communities Formed</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\icon-messages.svg" alt="message">
+              <h1>2.7m+</h1>
+              <p> Messages Sent</p>
+            </div>
+
+          </div>
+    </div>
+  </section>
+
+<section class="second-container">
+      <img class="sec" src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\bg-section-top-desktop-1.svg" alt="top" width="1350">
+      <div class="second">
+        <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\illustration-grow-together.svg" alt="grow" height="370">
+         <div class="second-half">
+           <h2>Grow Together</h2>
+           <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+           Think of the insightful conversations you miss out on with a feedback form.</p>
+         </div>
+      </div>
+      <img class="sec" src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\bg-section-bottom-desktop-2.svg" alt="bottom" width="1350">
+       <div class="conversations">
+         <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\illustration-flowing-conversation.svg" alt="flowing-conversation" width="500">
+         <div class="convo">
+           <h2>Flowing Conversations</h2>
+           <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+           just-in-time loading for a more natural flow.</p>
+         </div>
+       </div>
+</section>
+
+
+<section class="second-container">
+      <img class="sec one" src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\bg-section-top-desktop-1.svg" alt="top" width="1350">
+      <div class="second">
+        <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\illustration-your-users.svg" alt="grow" height="370">
+         <div class="second-half">
+           <h2>Your Users</h2>
+           <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+           once signed in to your app, your users can start chatting immediately.</p>
+         </div>
+      </div>
+      <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\bg-section-bottom-desktop-2.svg" alt="bottom" width="1350">
+      <div class="conversations">
+        <div class="convo inner">
+          <h2>Ready To Build Your Community?</h2>
+          <button class="btn btn-large btn-danger" type="submit" name="button">Get started for free</button>
+        </div>
+      </div>
+</section>
+
+
+
+<section>
+  <img src="C:/Users/Admin/Desktop/Web%20Development/Web%20Dev/Challenges/Challenge%205/images/bg-footer-top-desktop.svg" alt="top-bg" width="1350">
+  <div class="foot-note">
+  <div class="row">
+      <div class="col-lg-6 woods">
+        <img src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenges\Challenge 5\images\logo-white.svg" alt="logo" width="230">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+        vestibulum a, ultrices quis sem.</p>
+       <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-outbound-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+</svg>Phone: +1-543-123-4567</p>
+<p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+</svg> example@huddle.com</p>
+</div>
+        <div class="col-lg-6">
+          <div class="tables">
+            <h3>Newsletter</h3>
+            <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+            send you spam or pass on your email address</p>
+            <form action="mailto:rainasakshi.com" method="post" enctype="text/plain">
+              <input type="email" name="yourEmail" placeholder="Enter your email here" autocomplete="off">
+              <button type="submit" class="btn btn-danger btn-large">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="icons">
+          <i class="fab fa-facebook-f fa-1x"></i>
+          <i class="fab fa-twitter fa-1x"></i>
+          <i class="fab fa-instagram fa-1x"></i>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sakshi Raina</a>.
+    </p>
+  </footer>
+</body>
+</html>
